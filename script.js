@@ -1,3 +1,5 @@
+/*Grupo: Victor Cardoso, Elvis Silva, Luiz Otavio, Danillo Araujo e Sandro Espiridião*/
+
 const login = document.querySelector ('h2');
 console.log (login);
 login.style.color = 'yellow';
