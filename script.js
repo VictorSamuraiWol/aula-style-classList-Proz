@@ -13,10 +13,6 @@ button.style.borderRadius = '10px';
 button.style.borderBlockColor = 'black';
 button.style.color = 'white';
 
-const errorMessage = document.querySelector ('.error-text');
-errorMessage.classList.add ('visible');
-errorMessage.id = 'senha-incorreta';
-
 const usernameInput = document.querySelector ('#login-usuario');
 usernameInput.classList.remove ('error');
 usernameInput.classList.add ('login-usuario');
@@ -24,3 +20,8 @@ usernameInput.classList.add ('login-usuario');
 const passwordInput = document.querySelector ('#login-senha');
 passwordInput.classList.remove ('correct');
 passwordInput.classList.add ('login-senha');
+
+let errorMessage = document.querySelectorAll ('.error-text');
+errorMessage[0].id = 'login-incorreto';
+errorMessage[1].id = 'senha-incorreta';
+errorMessage[1].classList.add ('visible');
